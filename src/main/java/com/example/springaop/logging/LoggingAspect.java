@@ -42,11 +42,11 @@ public class LoggingAspect {
       result = proceedingJoinPoint.proceed();
       logContext.get().setElapsed(System.currentTimeMillis());
     } finally {
-			if (logContext.get().errorCode != null) {
-				logger.warn(JSON.toJSONString(logContext.get()));
-			} else {
-				logger.info(JSON.toJSONString(logContext.get()));
-			}
+      if (logContext.get().errorCode != null) {
+        logger.warn(JSON.toJSONString(logContext.get()));
+      } else {
+        logger.info(JSON.toJSONString(logContext.get()));
+      }
     }
     logContext.cleanup();
     return result;
