@@ -10,6 +10,7 @@ import java.util.ResourceBundle;
 @SpringBootApplication
 public class SpringAOPApplication {
 	//feature_conflict
+	//feature
 	public static void main(String[] args) {
 		SpringApplication.run(SpringAOPApplication.class, args);
 		Locale french = new Locale("fr", "FR");
