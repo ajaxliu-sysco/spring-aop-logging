@@ -9,8 +9,10 @@ import java.util.ResourceBundle;
 
 @SpringBootApplication
 public class SpringAOPApplication {
+	//feature
 	public static void main(String[] args) {
 		//feature_conflict_3
+		//feature_conflict_2
 		SpringApplication.run(SpringAOPApplication.class, args);
 		Locale french = new Locale("fr", "FR");
 		System.out.println(ResourceBundle.getBundle("i18n", french).getString("hello"));
